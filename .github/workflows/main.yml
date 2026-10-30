@@ -1,0 +1,19 @@
+name: CI Pipeline                    # 工作流名称（可选，建议填写）
+on:                                  # 触发事件
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:                                # 作业集合
+  build:
+    runs-on: ubuntu-latest           # 指定 Runner 环境
+    steps:
+      - uses: actions/checkout@v4    # 检出仓库代码
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci                  # 安装依赖
+      - run: npm run build           # 执行构建
