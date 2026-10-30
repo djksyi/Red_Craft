@@ -455,6 +455,16 @@ async function call<T>(cmd: string, args?: Record<string, unknown>): Promise<T> 
   }
 }
 
+export type InstanceResourceKind = "saves" | "shaderpacks" | "resourcepacks" | "screenshots";
+
+export interface InstanceResource {
+  name: string;
+  path: string;
+  isDirectory: boolean;
+  size: number | null;
+  modified: number | null;
+}
+
 export const api = {
   appInfo: () => call<AppInfo>("app_info"),
   appReady: () => call<void>("app_ready"),
@@ -483,6 +493,8 @@ export const api = {
     call<void>("save_instance_config", { id, config }),
   selectInstance: (id: string | null) => call<void>("select_instance", { id }),
   openInstanceDir: (id: string, sub = "root") => call<void>("open_instance_dir", { id, sub }),
+  instanceResources: (instance: string, kind: InstanceResourceKind) =>
+    call<InstanceResource[]>("instance_resources", { instance, kind }),
   openGameDir: () => call<void>("open_game_dir"),
   openFile: (path: string) => call<void>("open_file", { path }),
   readGameFile: (path: string) => call<string>("read_game_file", { path }),

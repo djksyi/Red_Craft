@@ -11,6 +11,7 @@
     user: "M5 2h6v1h1v5h-1v1H5V8H4V3h1zm1 2v2h1V4zm3 0v2h1V4zM3 10h10v1h1v3H2v-3h1z",
     gear: "M7 1h2v2h2V2h1v1h1v1h-1v2h2v2h-2v2h1v1h-1v1h-1v-1H9v2H7v-2H5v1H4v-1H3v-1h1V8H2V6h2V4H3V3h1V2h1v1h2zm0 5v1H6v2h1v1h2V9h1V7H9V6z",
     folder: "M1 3h5v1h1v1h8v9H1zm1 3v7h12V6z",
+    image: "M1 2h14v12H1zm1 1v10h12V3zM4 4h2v2H4zm5 3h2v1h1v1h1v3H3v-2h1V9h2v1h1V9h1V8h1z",
     trash: "M6 1h4v1h4v2H2V2h4zM3 5h10v10H3zm2 2v6h1V7zm3 0v6h1V7zm2 0v6h1V7z",
     refresh: "M6 2h5v1h1v1h1V2h1v5H9V6h3V5h-1V4H6v1H5v1H4v4h1v1h1v1h4v-1h1v-1h1V9h2v2h-1v1h-1v1h-1v1H5v-1H4v-1H3v-1H2V5h1V4h1V3h2z",
     search: "M5 1h4v1h1v1h1v4h-1v1h-1v1h1v1h1v1h1v1h1v1h1v2h-2v-1h-1v-1h-1v-1h-1v-1H9v-1H5V9H4V8H3V3h1V2h1zm0 2v1H4v3h1v1h3V7h1V4H8V3z",

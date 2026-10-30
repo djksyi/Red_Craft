@@ -8,6 +8,7 @@
   import CrashDialog from "./components/CrashDialog.svelte";
   import Launch from "./pages/Launch.svelte";
   import Instances from "./pages/Instances.svelte";
+  import Manage from "./pages/Manage.svelte";
   import Download from "./pages/Download.svelte";
   import Mods from "./pages/Mods.svelte";
   import Accounts from "./pages/Accounts.svelte";
@@ -141,6 +142,8 @@
               <Launch />
             {:else if app.page === "instances"}
               <Instances />
+            {:else if app.page === "manage"}
+              <Manage />
             {:else if app.page === "download"}
               <Download />
             {:else if app.page === "mods"}
