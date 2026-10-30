@@ -9,6 +9,7 @@ mod launch;
 mod logger;
 mod memory;
 mod migrate;
+mod resources;
 mod secrets;
 mod settings;
 mod state;
@@ -96,6 +97,7 @@ pub fn run() {
             commands::save_instance_config,
             commands::select_instance,
             commands::open_instance_dir,
+            resources::instance_resources,
             commands::open_game_dir,
             commands::open_file,
             commands::read_game_file,
